@@ -14,7 +14,7 @@ public class Assignment {
 		try {
 			
 			//intializing the driver
-			System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get("https://www.fitpeo.com/");
