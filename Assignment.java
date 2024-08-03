@@ -27,7 +27,7 @@ public class Assignment {
 			}
 			
 			//waiting to load
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			
 
 			
@@ -42,12 +42,12 @@ public class Assignment {
 	            System.out.println("Slider is not visible.");
 	            return;
 	        }
-			
+		Thread.sleep(5000);	
 			//updating the slider to 820
 			Actions actions = new Actions(driver);
 			actions.clickAndHold(sliderRevenue).moveByOffset(93, 0).release().perform();
 			WebElement inputFieldRevenue = driver.findElement(By.xpath("//input[@type='number']"));
-
+                        Thread.sleep(5000);
 			String numberToEnter = "560";
 			
 			//updating to 560
@@ -60,7 +60,7 @@ public class Assignment {
 	        .perform(); 
 			
 			
-			
+			Thread.sleep(5000);
 			String numberPresent = sliderRevenue.getAttribute("aria-valuenow");
 			
 			//checking wether number was updated accordingly
@@ -79,7 +79,7 @@ public class Assignment {
 	        .sendKeys(Keys.BACK_SPACE)
 	        .sendKeys("820")
 	        .perform();
-			
+			Thread.sleep(5000);
 			
 			//click the desired check boxes
 			driver.findElement(By.xpath("//div/p[contains(text(),'CPT-99091')]//following-sibling::label/span/input")).click();
